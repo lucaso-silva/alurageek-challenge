@@ -1,0 +1,27 @@
+.banner__imagem {
+    background: url(../img/banner-image.png) center /  cover no-repeat;
+    height: 40vh;
+    width: 100vw;
+}
+
+.banner__conteudo {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.banner__titulo {
+    color: var(--branco);
+    font-size: 3rem;
+}
+
+.banner__texto {
+    color: var(--branco);
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.banner__botao {
+    text-decoration: none;
+    display: inline-block;
+}

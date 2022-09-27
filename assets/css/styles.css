@@ -1,0 +1,39 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(galeria.css);
+@import url(contato.css);
+@import url(rodape.css);
+
+:root {
+    --bg-principal: #f5f5f5;
+    --bg-contato: #EAF2FD;
+    --azul: #2A7AE4;
+    --branco: #ffffff;
+    --cinza-escuro: #464646;
+    --cinza-claro: #A2A2A2;   
+    --fonte-principal: 'Raleway', sans-serif;
+}
+
+body {
+    background: var(--bg-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.botao {
+    background: transparent;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    padding: .75rem 2.5rem;
+    text-align: center;
+}
+
+.botao__azul {
+    background: var(--azul);
+    box-sizing: border-box;
+    color: var(--branco);
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+}

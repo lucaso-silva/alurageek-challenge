@@ -1,0 +1,60 @@
+.contato {
+    align-items:flex-start;
+    background-color: var(--bg-contato);
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 5rem;
+}
+
+.lista__secoes {
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+.navegacao__secao--link {
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.formulario__titulo {
+    color: var(--cinza-escuro);
+    font-size: 1rem;
+}
+
+.formulario__nome {
+    border: none;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.formulario__nome::placeholder {
+    padding-left: .5rem;
+}
+
+.formulario__mensagem {
+    border: none;
+    padding: 1rem 0;
+}
+
+.formulario__mensagem::placeholder {
+    padding-left: .5rem;
+}
+
+.formulario__enviar {
+    border: none;
+    margin-top: 1rem;
+    width: 35%;
+}
+
+.formulario__enviar:hover {
+    cursor: pointer;
+}
+

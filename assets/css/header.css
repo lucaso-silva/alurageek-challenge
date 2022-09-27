@@ -1,0 +1,32 @@
+.menu {
+    align-items: center;
+    background: var(--branco);
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+
+.menu__principal {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.menu__pesquisa {
+    background-color: var(--bg-principal);
+    border: none;
+    border-radius: 25px;
+    width: 60%;
+    padding: .5rem 1rem;
+}
+
+.menu__pesquisa::placeholder {
+    background: url(../img/icone-lupa.png) no-repeat;
+    background-size: contain;
+    background-position: 99%;
+}
+
+.menu__botao:hover {
+    cursor: pointer;
+}
