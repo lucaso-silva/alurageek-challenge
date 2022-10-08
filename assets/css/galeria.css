@@ -1,13 +1,5 @@
-.galeria {
-    padding: 2.5rem 5rem;
-}
-
 .galeria__secao {
-    margin-top: 3rem;
-}
-
-.galeria__secao:first-child {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .galeria__cabecalho {
@@ -18,18 +10,21 @@
 }
 
 .galeria__secao--titulo {
-    font-size: 2rem;
     color: var(--cinza-escuro);
 }
 
 .galeria__secao--link {
+    background: url(../img/seta.png) no-repeat;
     color: var(--azul);
+    background-position: right;
+    padding-right: 6%;
     text-decoration: none;
 }
 
 .galeria__conteudo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .produto__card {
@@ -38,13 +33,8 @@
         "card-imagem"
         'card-conteudo';
     grid-template-columns: 100%;
-    grid-template-rows: 200px auto;
-    margin-right: 1rem;
+    grid-template-rows: 173px auto;
     width: calc(16.25% - 1rem);
-}
-
-.produto__card:last-child {
-    margin-right: 0;
 }
 
 .produto__card--imagem {
@@ -71,4 +61,73 @@
 .produto__card--link {
     color: var(--azul);
     text-decoration: none;
+}
+
+@media screen and (min-width: 0) {
+    .galeria {
+        padding: .5rem 1rem;
+    }
+
+    .galeria__secao--titulo {
+        font-size: 1.5rem;
+    }
+
+    .produto__card {
+        width: calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }   
+
+    .produto__card:nth-child(5), .produto__card:nth-child(6) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .galeria__secao {
+        margin-top: 2.5rem;
+    }
+
+    .galeria {
+        padding: 1.25rem 4rem;
+    }
+
+    .produto__card {
+        width: calc(25% - 1rem);
+        margin-top: 0;
+    }
+
+    .galeria__secao--titulo {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .galeria__secao {
+        margin-top: 3rem;
+    }
+    
+    .galeria {
+        padding: 2.5rem 8rem;
+    }
+
+    .galeria__secao--link {
+        padding-right: 2.5%;
+    }
+
+    .produto__card:nth-child(5), .produto__card:nth-child(6) {
+        display: grid;
+    }
+
+    .galeria__secao--titulo {
+        font-size: 2rem;
+    }
+
+    .produto__card {
+        width: calc(16.25% - 1rem);
+        margin-right: 1rem;
+    }
+
+    .produto__card:last-child {
+        margin-right: 0;
+    }
 }

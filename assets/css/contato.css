@@ -1,9 +1,12 @@
+.rodape__contato {
+    background-color: var(--bg-contato);
+    padding: 1.5rem 1.25rem;
+}
+
 .contato {
     align-items:flex-start;
-    background-color: var(--bg-contato);
     display: flex;
     justify-content: space-around;
-    padding: 3rem 5rem;
 }
 
 .lista__secoes {
@@ -29,32 +32,109 @@
     font-size: 1rem;
 }
 
+.input__nome {
+    background-color: var(--branco);
+    box-shadow: 1.5px 1.5px 3.5px rgb(0 0 0 / 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: .75rem 0;
+}
+
 .formulario__nome {
     border: none;
-    padding: 1rem 0;
-    margin: 1rem 0;
+    font-size: 1.25rem;
+    padding: .5rem;
+    margin: 0 0 1rem 0;
 }
 
 .formulario__nome::placeholder {
+    font-size: 1.25rem;
     padding-left: .5rem;
+}
+
+.formulario__label {
+    color: var(--cinza-escuro);
+    font-weight: 400;
+    font-size: 1rem;
+    padding: .5rem;
 }
 
 .formulario__mensagem {
     border: none;
-    padding: 1rem 0;
+    box-shadow: 1.5px 1.5px 3.5px rgb(0 0 0 / 0.2);
+    font-size: 1.25rem;
+    padding: 1rem;
 }
 
 .formulario__mensagem::placeholder {
     padding-left: .5rem;
+    font-size: 1.25rem;
 }
 
 .formulario__enviar {
-    border: none;
     margin-top: 1rem;
-    width: 35%;
 }
 
 .formulario__enviar:hover {
     cursor: pointer;
 }
 
+@media screen and (min-width: 0) {
+    .contato {
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .contato__formulario {
+        margin-top: 1rem;
+        text-align: start;
+        width: 90vw;
+    }
+
+    .formulario__enviar {
+        width: 40%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .rodape__contato {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contato__formulario {
+        width: 60%;
+    }
+
+    .contato {
+        width: 30%;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .rodape__contato {
+        padding: 2rem 8rem;
+    }
+
+    .contato {
+        flex-direction: row;
+        width: 50%;
+        align-items: flex-start;
+    }
+
+    .lista__secoes {
+        line-height: 3.5rem;
+    }
+
+    .contato__formulario {
+        width: 45%;
+    }
+
+    .formulario__enviar {
+        width: 50%;
+    }
+}

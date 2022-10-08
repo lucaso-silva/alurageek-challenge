@@ -17,7 +17,6 @@
 body {
     background: var(--bg-principal);
     font-family: var(--fonte-principal);
-    font-size: 16px;
     font-weight: 700;
 }
 
@@ -31,9 +30,29 @@ body {
 
 .botao__azul {
     background: var(--azul);
+    border: 1px solid var(--azul);
     box-sizing: border-box;
     color: var(--branco);
+    font-family: var(--fonte-principal);
     font-weight: 400;
     padding: 1rem;
     text-align: center;
+}
+
+@media screen and (min-width: 0) {
+    .botao__azul {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .botao__azul {
+        font-size: .95rem;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .botao__azul {
+        font-size: 1.25rem;
+    }
 }
