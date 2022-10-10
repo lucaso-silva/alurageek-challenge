@@ -3,6 +3,7 @@
 @import url(galeria.css);
 @import url(contato.css);
 @import url(rodape.css);
+@import url(homi-login.css);
 
 :root {
     --bg-principal: #f5f5f5;

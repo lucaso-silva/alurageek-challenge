@@ -23,7 +23,7 @@
 
 @media screen and (min-width: 0) {
     .banner__imagem {
-        height: 25vh;
+        height: 28.5vh;
     }
     
     .banner__conteudo {
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 768px) {
     .banner__imagem {
-        height: 38.5vh;
+        height: 39.25vh;
     }
 
     .banner__conteudo {
@@ -61,7 +61,7 @@
 
 @media screen and (min-width: 1220px) {
     .banner__imagem {
-        height: 45vh;
+        height: 50vh;
     }
 
     .banner__conteudo {

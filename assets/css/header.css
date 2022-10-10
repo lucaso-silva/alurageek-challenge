@@ -9,7 +9,12 @@
 .menu__principal {
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.menu__logo {
+    height: 2.5rem;
+    margin-right: 1.5rem;
 }
 
 .menu__pesquisa { 
@@ -35,14 +40,6 @@
 }
 
 @media screen and (min-width: 0) {
-    .menu {
-        justify-content: center;
-    }
-
-    .menu__logo {
-        height: 2.5rem;
-    }
-
     .menu__pesquisa {
         display: none;
     }
@@ -55,7 +52,6 @@
 
 @media screen and (min-width: 768px) {
     .menu__principal {
-        justify-content: space-between;
         width: 65%;
     }
 
